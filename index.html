@@ -31,31 +31,24 @@
                 <p>You <span>know</span> you want to.</p>
             </div>
 
-            <div class="middle-container">
-                <div class="middle-header">
-                    <h2>Let's do it!</h2>
-                </div>
-
-                <div class="form-container">
-                    <div class="left-form">
-                        <form action="">
-                            <fieldset>
+            <div class="middle-container">    
+                <form action="">
+                    <fieldset>
+                        <legend>Let's do this!</legend>
+                        
+                        <div class="form-container">
+                            <div class="form-block">
                                 <label for="first-name">FIRST NAME</label>
                                 <input type="text" id="first-name" name="first-name">
                                 
                                 <label for="email">EMAIL</label>
-                                <input type="email" id="email" name="email">
+                                <input type="email" id="email" name="email" placeholder="john@example.com">
 
                                 <label for="user-password">PASSWORD</label>
-                                <input type="password" id="user-password" name="password">
-                            </fieldset>
-                        </form>
+                                <input type="password" id="user-password" name="password" required />
+                            </div>
 
-                    </div>
-                    
-                    <div class="right-form">
-                        <form action="">
-                            <fieldset>
+                            <div class="form-block">
                                 <label for="last-name">LAST NAME</label>
                                 <input type="text" id="last-name" name="last-name">
                                 
@@ -63,19 +56,17 @@
                                 <input type="tel" id="phoneno" name="phoneno">
 
                                 <label for="user-password">CONFIRM PASSWORD</label>
-                                <input type="password" id="user-password" name="password">
-                            </fieldset>
-                        </form>
+                                <input type="password" id="user-password" name="password" required />
+                            </div>
+                        </div> 
                         
+                        <div class="submit-container">
+                            <button type="submit">Create Account</button>
 
-                    </div>  
-                </div>
-
-
-            </div>
-            
-            <div class="bottom-container">
-                <p></p>
+                            <p>Already have an account? <a href="">Log in</a></p>
+                        </div>
+                    </fieldset>
+                </form>   
             </div>
         </section>
     </div>
