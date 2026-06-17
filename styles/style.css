@@ -36,11 +36,14 @@ body {
 
 .left-section > p {
     position: absolute;
-    top: 670px;
-    left: 100px;
+    top: 700px;
+    left: 130px;
     color: white;
-    font-size: 20px;
-    text-align: center;
+    font-size: 15px;
+}
+
+.left-section > p > a {
+    color: white;
 }
 
 .bg-image {
@@ -82,9 +85,8 @@ body {
 .top-container {
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
-    background-color: rgb(230, 229, 229);
-    padding: 100px 0px 40px 50px;
+    background-color: rgb(245, 245, 245);
+    padding: 150px 0px 40px 50px;
 }
 
 .top-container > p {
@@ -109,6 +111,11 @@ p > span {
 .form-container {
     display: flex;
     gap: 80px;
+    margin-left: -50px;
+    margin-bottom: 30px;
+    padding-left: 50px;
+    padding-bottom: 15px;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.2);
 }
 
 .form-block {
@@ -119,7 +126,7 @@ p > span {
 legend {
     font-size: 20px;
     font-weight: bold;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 fieldset {
@@ -128,11 +135,21 @@ fieldset {
     margin: 0;
 }
 
+input[type="password"]:user-invalid {
+    border-color: red;
+}
+
 input {
     margin-bottom: 20px;
-    border: 2px solid #E5E7EB;
+    border: 1px solid #E5E7EB;
     border-radius: 4px;
     height: 18px;
+}
+
+input:focus {
+    outline: none;
+    border-color: blue;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.2);
 }
 
 label {
@@ -140,16 +157,20 @@ label {
 }
 
 .submit-container > button {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
     color: white;
-    padding: 10px 30px;
+    padding: 12px 50px;
     border: none;
     border-radius: 5px;
     background-color: #596D48;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    margin-bottom: 15px;
 }
 
-a {
+.submit-container > p > a {
     text-decoration: none;
     color: #596D48;
+    font-weight: bold;
 }
